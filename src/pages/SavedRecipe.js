@@ -33,7 +33,7 @@ export const SavedRecipe = () => {
       </h1>
 
       <ul>
-        {savedRecipes.map((recipe) =>{
+        {savedRecipes && savedRecipes.map((recipe) =>{
           return <li key={recipe._id}>
             <div>
               <h2>{recipe.name}</h2>
